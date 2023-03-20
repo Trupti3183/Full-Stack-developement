@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="on">
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   </head>
+   <body>
+    <h1 onmouseover="this.innerHtml='if you can'"
+    onmouseout="this.innerHtml='catch me'">catch me</h1>
+    <button onclick="Hello">click me</button>
+    <button onclick="changeTogGreen()">green</button>
+    <button onclick="changeToRed()">red</button>
+    <br><br>
+    <input type="text" placeholder="first number" id="fn"><br>
+    <select id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="#">*</option>
+        <option value="/#">/</option>
+    </select><br>
+    <input type="text" placeholder="second number" id="sn"><br>
+    <button>Calculate</button><br>
+    <label for="">Result=<span></span></label>
+    <!--Internal 35-->
+    <script>
+        console.log("Hello...")
+        // for(var i=0;i<-10;i++){
+
+        // }
+        // console.log(i);
+        // for(let j=0;j<=10;j++){
+            
+        // }
+     //console.log(j);
+        let a=10;
+        let b=20;
+        let c=30;
+       // console.log(a+b);
+        if(a>b && a>c){
+            console.log(a+" is largest")
+        }
+        else if (b>c) {
+            console.log(b+" is largest")
+        }else
+            console.log(c+" is largest")
+            //Dialog Box
+            //alert("alert box");
+            //confirm("confirm box");
+            // //prompt("prompt box");
+            // let num1 = prompt("Enter first number");
+            // let num2 = prompt("Enter 2nd number");
+            // document.body.innerHTML = "sum = " +(num1 + num2);
+            function Hello(){
+                alert("hello world");
+            }
+            function changeToGreen(){
+                let res = confirm("Do you want to change the color to green")
+                if(res){
+                    document.body.style.backgroundColor = "green"
+                }
+            }
+            function changeTored(){
+                let res = confirm("Do you want to change the color to red")
+                if(res){
+                    document.body.style.backgroundColor = "red"
+                }
+            }
+            document.getElementById("fn");
+            console.log(x);
+            // let y = document.getElementsByTagName("input");
+            // console.log(y);
+            let y =document.getElementById('sn').value;
+            let op = document.getElementById('op').value;
+            x=fn.parseInt(x);
+            y=sn.parseInt(y);
+            switch (op) {
+                case '+':
+                    res = x+y;
+                    document.write(res);
+                    break;
+                case '-':
+                    res = x-y;
+                    document.write(res);
+                    break;  
+                case '*':
+                    res = x*y;
+                    document.write(res);
+                    break;   
+                case '/':
+                    res = x/y;
+                    document.write(res);
+                    break;      
+                 
+                default:
+                    document.write("choose a valid option");
+                    break;
+            }
+            
+    </script>
+   </body>
+</html>

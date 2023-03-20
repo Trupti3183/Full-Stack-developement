@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card my-5">
+          <div class="card-header">
+            <h3>sign up</h3>
+          </div>
+          <div class="card-body">
+            <form action="{% url 'signup' %}" method="post">
+            {% csrf_token %}
+            <div class="text-center">
+                {% for m in messages %}
+                <p class="{{m.tags}}">{{m}}</p>
+                {% endfor %}
+            </div>
+              <div class="mb-1">
+                <label>First Name</label>
+                <input type="text" name="first_name" class="form-control" />
+              </div>
+              
+              <div class="mb-1">
+                <label>Last Name</label>
+                <input type="text" name="last_name" class="form-control" />
+              </div>
+              <div class="mb-1">
+                <label>username</label>
+                <input type="text" name="username" class="form-control" />
+              </div>
+              <div class="mb-1">
+                <label>Email</label>
+                <input type="text" name="Email" class="form-control" />
+              </div>
+              <div class="mb-1">
+                <label>password</label>
+                <input type="text" name="password" class="form-control" />
+              </div>
+              <input type="submit" value="signup" class="btn btn-primary w-100 my-2" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

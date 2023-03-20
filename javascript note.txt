@@ -1,0 +1,4 @@
+javascript-
+
+event-:any activity that change the state of dom 
+dom -document object model.

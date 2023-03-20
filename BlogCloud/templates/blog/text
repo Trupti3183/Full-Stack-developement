@@ -1,0 +1,16 @@
+pages:
+Creat app 
+2. registering the app in settings.py
+create urls.py and connect it with root url
+create folder for template 
+
+admin:
+create html file in template
+creatwe function in view
+make an entity in urls.py(app)
+use the name of the url in navbar
+
+blog:
+new class in models.py 
+make migrations
+migrate
